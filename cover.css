@@ -30,7 +30,8 @@ body {
   background-color: #822122;
   background-image: url("./images/wall.jpg");
   background-repeat: repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
 }
 body {
   color: #fff;
@@ -72,9 +73,12 @@ body {
 
 .masthead-nav > li {
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
