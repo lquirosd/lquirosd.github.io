@@ -30,6 +30,7 @@ body {
   background-color: #333;
   background-image: url("./images/wall.jpg");
   background-size: cover;
+  background-repeat: repeat;
 }
 body {
   color: #fff;
