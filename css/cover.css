@@ -29,9 +29,9 @@ body {
   height: 100%;
   background-color: #822122;
   background-image: url("../images/wall.jpg");
-  background-repeat: repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 body {
   color: #fff;
@@ -136,7 +136,7 @@ body {
 
 .mastbody {
   position: relative;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 /*
@@ -186,6 +186,7 @@ body {
 }
 
 .project {
+    position: relative;
     margin-bottom: 30px;
     margin-top: 0px;
     vertical-align: top;
@@ -198,7 +199,7 @@ body {
 .project figure {
     position: relative;
     display: inline-block;
-    width: 283px;
+    width: 200px;
     -moz-box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
     -webkit-box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
     box-shadow: 0 3px 0 #e2e2e2,transparent 0 0 0;
@@ -289,3 +290,24 @@ figcaption .project-creator {
     line-height: 18px;
     letter-spacing: 1px;
 } 
+
+
+/*
+To center navbar
+*/    
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+.navbar-inner {
+    background:transparent;
+}
+
+.color_foot {
+  background-color: #fff;
+}
