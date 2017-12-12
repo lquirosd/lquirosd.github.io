@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Lorenzo Quirós Díaz">
-    <link rel="icon" href="./images/wheel.png">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="Lorenzo Quirós Díaz">
+        <link rel="icon" href="./images/wheel.png">
 
-    <title>Personal Page</title>
+        <title>Personal Page</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font-Awesome core CSS -->
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="./external/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font-Awesome core CSS -->
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"-->
+        <!-- Custom styles for this template -->
+        <link href="./css/custom.css" rel="stylesheet">
+    </head>
 
-    <!-- Custom styles for this template -->
-    <link href="./css/cover.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!--script src="../../assets/js/ie-emulation-modes-warning.js"></script-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div id="nav-placeholder" class="inner">
-              <nav>
-                <ul class="nav masthead-nav">
-                  <a class="masthead-brand" href="#"> <img src="./images/cr_carreta.png" width="50" height="50"></a>
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="./projects">Projects</a></li>
-                  <li><a href="./photography">Photography</a></li>
-                  <!-- <li><a href="#contact">Contact</a></li> -->
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="inner cover">
-                <span>
-                  <img class="avatar" src="./images/avatar.jpg" width="200" height="200" alt="Generic placeholder thumbnail">
-                </span>
-              <h1 class="cover-heading">Lorenzo Quirós Díaz</h1>
-              <span>
-                <h4>Pattern Recognition and Machine Learning PhD student at <a href="https://www.prhlt.upv.es/">PRHLT</a></h4>
-              </span>
-              <p class="lead"><a href="#" class="btn btn-lg btn-default">more</a></p>
-          </div>
-          <div class="mastfoot">
-            <div class="inner">
-              <p>2017, Lorenzo Quirós Díaz, <a href="https://github.com/lquirosd"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>...
-              <a href="www.linkedin.com/in/lquirosd"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-              .</p>
-            </div>
-          </div>
+    <body>
+        <!-- NAV -->
+        <!-- Fixed navbar -->
+        <div class="container" id="top_bar">
+            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top" style="background-color: rgba(0, 0, 0, 0.5);">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/cr_carreta.png" width="50" height="50" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav ml-auto justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#cover">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photography</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </div>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--script src="../../assets/js/ie10-viewport-bug-workaround.js"></script-->
-  </body>
+        <!-- Cover Page -->
+        <div class="row h-100" id="cover">
+            <div class="col-sm-12 align-self-center text-center">
+                <img class="avatar mx-auto" src="./images/avatar.jpg" width="200" height="200" alt="Generic placeholder thumbnail">
+                <div class="mt-1 mx-auto">
+                    <h1>Lorenzo Quirós Díaz</h1>
+                </div>
+                <h4 class="lead mx-auto">Pattern Recognition and Machine Learning PhD student at <a href="https://www.prhlt.upv.es/">PRHLT</a></h4>
+                <p class="lead mx-auto"><a href="#" class="btn btn-lg btn-default">more</a></p>
+            </div>
+        </div>
+        <!-- Projects -->
+        <div id="projects" class="container marketing inner">
+            <!-- P2PaLA-->
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">P2PaLA<span class="text-muted">Page 2 PAGE Layout Analysis tool</span></h2>
+                    <p class="lead">Donec ullamcorper us, tellus ac cursus commodo.</p>
+                    <p><a class="btn btn-lg btn-primary fa fa-github" href="https://github.com/lquirosd/P2PaLA" role="button">View</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" style="width: 250px; height: 250px;" src="./images/cr_carreta.png">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 push-md-5">
+                    <h2 class="featurette-heading">Some_text <span class="text-muted">Other_text.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non.</p>
+                    <p><a class="btn btn-lg btn-primary fa fa-github" href="#" role="button">View</a></p>
+                </div>
+                <div class="col-md-5 pull-md-7">
+                    <img class="featurette-image img-fluid mx-auto" style="width: 250px; height: 250px;" src="./images/cr_carreta.png">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <!-- Photography -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p>2017, Lorenzo Quirós Díaz, <a href="https://github.com/lquirosd"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>...
+                <a href="www.linkedin.com/in/lquirosd"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="./external/js/bootstrap.min.js"></script>
+    </body>
 </html>
