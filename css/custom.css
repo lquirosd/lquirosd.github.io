@@ -75,6 +75,11 @@ body {
     -webkit-filter: none;
 }
 
+.round {
+    border-radius: 50%;
+}
+
+
 /*
  * project
 */
